@@ -1,0 +1,5 @@
+Important data structures information for the database Component:
+
+1. The major object Database service needs is a QueryData element to hold the formatted result obtained from the search query.
+2. The results will be stored in an ArrayList of QueryData, where each element in the ArrayList will be a result tuple for the
+   executed query

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="90.0" prefHeight="90.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="team1.searchengine.app.controller.JournalPublicationResultItemController">
+   <children>
+      <Hyperlink fx:id="hlnkPubTitle" layoutX="10.0" layoutY="5.0" onAction="#onTitleClick" text="[PubName]" wrapText="true" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Hyperlink>
+      <Separator layoutX="45.0" layoutY="44.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+      <Label fx:id="lblBookTitle" layoutX="35.0" layoutY="30.0" text="[BookTitle]" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="35.0" />
+      <FlowPane fx:id="fpneAuthorsWrap" layoutX="35.0" layoutY="50.0" prefHeight="26.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="10.0" />
+   </children>
+</AnchorPane>

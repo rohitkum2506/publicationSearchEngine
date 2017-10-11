@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="team1.searchengine.app.controller.ConferenceProceedingDetailedController">
+   <children>
+    <AnchorPane style="-fx-background-color: #FFF;" VBox.vgrow="ALWAYS">
+         <children>
+            <ScrollPane fitToWidth="true" layoutY="25.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+               <content>
+                  <VBox>
+                     <children>
+                        <Label fx:id="lblTitle" text="[Proceeding Name]" wrapText="true">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <FlowPane hgap="10.0">
+                           <children>
+                              <Pane fx:id="pneYear">
+                                 <children>
+                                    <Text fill="#aaaaaa" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year :" />
+                                    <Label fx:id="lblYear" layoutX="34.0" layoutY="5.0" text="[Year]">
+                                       <padding>
+                                          <Insets right="5.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane fx:id="pneBookTitle">
+                                 <children>
+                                    <Text fill="#aaaaaa" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Title :" />
+                                    <Label fx:id="lblBookTitle" layoutX="65.0" layoutY="5.0" text="[BookTitle]">
+                                       <padding>
+                                          <Insets right="5.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane fx:id="pnePublisher">
+                                 <children>
+                                    <Text fill="#aaaaaa" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Publisher :" />
+                                    <Label fx:id="lblPublisher" layoutX="61.0" layoutY="5.0" text="[Publisher]">
+                                       <padding>
+                                          <Insets right="5.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane fx:id="pneSeriesTitle">
+                                 <children>
+                                    <Text fill="#aaaaaa" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Series :" />
+                                    <Label fx:id="lblSeriesTitle" layoutX="45.0" layoutY="5.0" text="[SeriesTitle]">
+                                       <padding>
+                                          <Insets right="5.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane fx:id="pneVolume">
+                                 <children>
+                                    <Text fill="#aaaaaa" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Volume :" />
+                                    <Label fx:id="lblVolume" layoutX="52.0" layoutY="5.0" text="[Volume]">
+                                       <padding>
+                                          <Insets right="5.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane fx:id="pneIsbn">
+                                 <children>
+                                    <Text fill="#aaaaaa" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ISBN :" />
+                                    <Label fx:id="lblIsbn" layoutX="35.0" layoutY="5.0" text="[ISBN]">
+                                       <padding>
+                                          <Insets right="5.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="30.0" />
+                           </VBox.margin>
+                        </FlowPane>
+                        <GridPane fx:id="grdContentWrap">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                        </GridPane>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+            <Hyperlink fx:id="hlnkUrl" layoutX="329.0" layoutY="14.0" onAction="#onBrowserLinkClicked" text="Open in Browser" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Hyperlink>
+            <Text fill="#aaaaaa" layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CONFERENCE" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

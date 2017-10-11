@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" prefHeight="115.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="team1.searchengine.app.controller.FilterElementController">
+   <children>
+      <ComboBox fx:id="cmbFilterField" layoutX="5.0" layoutY="23.0" onAction="#onFieldSelected" prefWidth="150.0" promptText="FIELD" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+      <ComboBox fx:id="cmbFilterOperator" layoutX="5.0" layoutY="55.0" prefWidth="150.0" promptText="OPERATOR" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+      <TextField fx:id="txtFilterValue" layoutX="5.0" layoutY="83.0" onKeyTyped="#onKeyTyped" promptText="Value" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+      <Separator layoutX="5.0" layoutY="9.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="39.0" AnchorPane.topAnchor="10.0" />
+      <Separator layoutX="165.0" layoutY="19.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="10.0" />
+      <Hyperlink fx:id="btnRemove" contentDisplay="GRAPHIC_ONLY" layoutX="98.0" layoutY="-1.0" text="REMOVE" textAlignment="CENTER" textFill="#5e5c5c" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="-1.0">
+         <font>
+            <Font size="10.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="18.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@remove.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Hyperlink>
+      <AnchorPane fx:id="apneRadioGroup" layoutX="5.0" layoutY="80.0" prefHeight="25.0" visible="false" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+         <children>
+            <RadioButton fx:id="rdbnYes" layoutX="3.0" layoutY="4.0" mnemonicParsing="false" selected="true" text="YES">
+               <toggleGroup>
+                  <ToggleGroup fx:id="grp" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton layoutX="82.0" layoutY="4.0" mnemonicParsing="false" text="NO" toggleGroup="$grp" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
